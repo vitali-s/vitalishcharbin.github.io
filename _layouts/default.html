@@ -1,29 +1,58 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>{{ page.title }}</title>
-        <!-- link to main stylesheet -->
-        <link rel="stylesheet" type="text/css" href="/css/main.css">
-    </head>
-    <body>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/cv">CV</a></li>
-                <li><a href="/blog">Blog</a></li>
-            </ul>
-        </nav>
-        <div class="container">
-        
-        {{ content }}
-        
-        </div><!-- /.container -->
-        <footer>
-            <ul>
-                <li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-                <li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-            </ul>
+<head>
+    <meta charset="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <title>{{ page.title }}</title>
+    <!--<link rel="pingback" href="" />-->
+    <!--<link rel="stylesheet" href="" type="text/css" media="all">-->
+    <!--<script type="text/javascript" src=""></script>-->
+    <!--[if lt IE 8]>
+       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" charset="UTF-8" async></script>
+    <![endif]-->
+</head>
+
+<body class="home blog">
+    <div id="page" class="hfeed site">
+	    <header id="masthead" class="site-header" role="banner">
+			<div class="inner-wrap">
+				<div class="hgroup-wrap clearfix">
+					<div class="site-branding">
+                        <div class="header-text">
+                            <h1 id="site-title">
+                                    <a href="" title="" rel="home">
+                                        Blog Name
+                                    </a>
+                                </h1>
+                            <h2 class="site-description">Blog Description</h2>
+                        </div>
+					</div>
+					<div class="hgroup-wrap-right">
+						<nav id="site-navigation" class="main-navigation" role="navigation">
+							<div class="nav-menu clearfix">
+								Manu
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div id="main" class="site-main inner-wrap">
+            <div id="primary">
+                <div id="content" class="clearfix">
+                     {{ content }}
+                </div>
+            </div>
+        </div>
+        <footer id="colophon" class="clearfix">
+            <div id="site-generator" class="inner-wrap">
+                <div class="copyright">
+                    Copyright © 2016 <a href="/about" title="Vitali Shcharbin"><span>Vitali Shcharbin</span></a>.
+                </div>
+            </div>
         </footer>
-    </body>
+        <a href="#masthead" id="scroll-up"><i class="icon-angle-up"></i></a>
+    </div>
+</body>
 </html>
